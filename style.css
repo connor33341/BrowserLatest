@@ -1,0 +1,12 @@
+:root{
+    --iframe-align: center;
+    --progress-outer-default: 84%;
+}
+iframe{
+    align-self: var(--iframe-align);
+}
+.progress-outer{
+    max-width: var(--progress-outer-default);
+    height: 20px;
+    
+}

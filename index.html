@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--Project for Mr.Burke-->
+<html lang="en-us" data-bs-theme="dark">
+
+<head>
+    <title>Browser</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Browser">
+    <meta name="Keywords" content="connor33341, connor_33341">
+    <meta name="author" content="connor33341">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body onload="Main()">
+    <div class="offcanvas offcanvas-start" id="menu">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Heading</h1>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Some text lorem ipsum.</p>
+          <p>Some text lorem ipsum.</p>
+          <button class="btn btn-secondary" type="button">A Button</button>
+        </div>
+      </div>
+    <div class="container-fluid p-5">
+        <div class="alert alert-dark alert-dismissible" id="alert" hidden="true" style="position:absolute; z-index: 2;">
+            <button type="button" class="btn-close" id="alert-close"></button>
+            <strong>Message: </strong><span class="badge rounded-pill bg-danger" id="alert-error">Error</span><p id="alert-message">Message Here</p>
+        </div>
+        <div class="container-fluid clearfix shadow">
+            <span clss="rounded-pill">
+                <input type="text" placeholder="type here" id="input" class="float-start rounded-4">
+                <button id="mainbutton" type="button" class="btn btn-primary float-end">Send</button>
+                <span class="badge bg-secondary" id="tag"></span>
+            </span>
+        </div>
+        <br>
+        <div class="container-fluid clearfix shadow rounded-4">
+            <div class="container-fluid pt-4 mx-auto" style="position: absolute; z-index: 2" id="progress" hidden="true">
+                <div class="progress" style="height:20px; max-width: 84%;" id="progress-outer">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%" id="progress-inner">70%</div>
+                </div>
+            </div>
+            <iframe id="iframe" class="mx-auto border border-dark rounded-4" style="position: absolute; z-index: 1; opacity: 0; width: 80%; height: 70%;" src="about:blank"></iframe>
+        </div>
+    </div>
+    <button class="btn btn-primary float-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" hidden="true">Menu</button>
+</body>
+
+</html>
